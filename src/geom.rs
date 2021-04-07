@@ -1,6 +1,6 @@
 pub type Matrix4 = [[f64; 4]; 4];
 
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 pub struct Vector3 {
     pub x: f64,
     pub y: f64,
@@ -40,6 +40,7 @@ impl Vector3 {
     }
 }
 
+#[derive(Clone, Copy, Debug)]
 pub struct Triangle (pub Vector3, pub Vector3, pub Vector3);
 
 impl Triangle {
